@@ -1,0 +1,208 @@
+.backgroun_color{
+	background-color: rgb(68, 65, 65);
+	
+}
+.conteneur{
+
+  	display: inline-flex;
+	justify-content: space-around;
+	margin-top: 115px;
+	margin-left: 120px;
+}
+
+
+
+.Photo{
+	
+	clip-path: circle(40%);  	
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 206px;
+	height: 198px;
+	
+	}
+.Album{
+	width: 100px;
+	height: 100px; 
+
+}
+
+article{
+
+	font-family: Gotham;
+	width: 350px;
+	text-align: justify;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 6px;
+	margin: 6px;
+
+}
+aside{
+	text-align:center;
+	font-family: Gotham;
+	font-size: 3em;
+}
+ .taille{
+ 	width: 376px;
+	background-color: blue;
+	border-radius: 10px;
+	}
+
+	.taille:nth-child(1)
+	{
+		background: linear-gradient(#04FC26,#FA451E);
+	}
+
+	.taille:nth-child(2)
+	{
+		background: linear-gradient(#FA451E,#D9FA1E);
+		
+	}
+
+	.taille:nth-child(3)
+	{
+		background: linear-gradient(#D9FA1E,#04C9F9);
+
+		
+	}
+
+	.taille:nth-child(4)
+	{
+		background: linear-gradient(#04C9F9,#B604F9);
+		
+	}
+
+	.taille:nth-child(5)
+	{
+		background: linear-gradient(#B604F9,#04FC26);
+	}
+
+
+
+
+
+
+p{
+	text-align: 	center;
+	font-family: Gotham;
+	font-size: 0.65em;
+}
+audio{
+	width: 240px;
+	height: 20px;
+}
+
+
+.style{
+	text-align: center;
+	font-family: Gotham;
+	font-size: 	0.85em;
+	
+
+}
+/*Menu Album*/
+
+.Boutton_Right{
+  margin-left: 265px;
+  background: transparent;
+  border: none;
+
+}
+.Boutton_Left{
+	width: 100px;
+	background: transparent;
+	border: none;
+}
+.menu{
+	position: relative;
+  display: inline-block;
+  width: 376px;
+}
+
+
+/*___________________________ALBUM_1________________________*/
+.menu-contenu-a{
+  display: none;
+  position: absolute;
+ 	width: 260px;
+ 	bottom: 29px;
+  z-index: 1;
+}
+
+.menu-contenu-a p{
+  color: black;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: block;
+  height: 9px ;
+
+}
+
+.menu:hover .menu-contenu-a{ display: block;}
+.menu:hover .boutton-derou { background-color: #3e8e41;}
+/*___________________________________________________________*/
+/*_________________ALBUM_2__________________________________*/
+
+.menu-contenu-b{
+  display: none;
+  position: absolute;
+  left: 100px;
+ 	width: 260px;
+	bottom: 31px;
+ 	z-index: 1;
+
+}
+
+
+.menu-contenu-b p{
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  height: 4px;
+}
+
+.menu:hover .menu-contenu-b{ display: block; }
+.menu:hover .boutton-derou { background-color: #3e8e41;
+}
+
+/*_________________________________________________________*/
+/*_________________ALBUM_3_______________________________*/
+
+.menu-contenu-c{
+  display: none;
+  position: absolute;
+ 	width: 260px;
+	bottom: 12px;
+ 	z-index: 1;
+
+}
+
+
+.menu-contenu-c p{
+  color: black;
+  padding: 10px 25px;
+  text-decoration: none;
+  display: block;
+  height: 9px;
+}
+
+.menu:hover .menu-contenu-c{ display: block; }
+.menu:hover .boutton-derou { background-color: #3e8e41;
+}
+
+
+/*____________________________________________________________*/
+
+
+
+
+
+@media(max-width: 1024px)
+{
+	.conteneur{
+	flex-direction: column;
+	}
+}

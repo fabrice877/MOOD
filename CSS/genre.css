@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2? famille=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2? family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Playfair', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #282937;
+  color: #f1f1f1;
+}
+
+/* Logo */
+
+.flex{
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+.box{
+  position: relative;
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.23,1.83,0.42,1.19);
+}
+
+.box:hover{
+  transform: scale(1.2);
+}
+
+.box p{
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 30px;
+  letter-spacing: 3px;
+  font-family: 'Playfair', sans-serif;
+}
+
+.circle{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #f1f1f1;
+  animation: 1s linear infinite alternate boxMagic,
+             4s linear infinite spinning;
+}
+
+@keyframes boxMagic {
+  from{
+    box-shadow:
+    0 0 0 #feac5e,
+    0 0 0 #c779d0,
+    0 0 0 #4bc0c8,
+    0 0 0 #42db75;
+  }
+  to{
+    box-shadow:
+    0 -10px 0 #feac5e,
+    -10px 0 0 #c779d0,
+    0 10px 0 #4bc0c8,
+    10px 0 0 #42db75;
+  }
+}
+
+@keyframes spinning{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+/* Barre de recherche */
+
+.recherche{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 30px;
+}
+
+form{
+  position: absolute;
+  top: 40px;
+}
+
+input{
+  width: 200px;
+  height: 40px;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  padding-left: 5px;
+  color: #282937;
+}
+
+/* Se connecter */
+
+.icone {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.connect{
+  position: absolute;
+  top: 20px;
+}
+
+/* Barre de navigation */
+
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+nav .onglets{
+  list-style: none;
+}
+
+nav .onglets a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0 20px;
+  border-right: 3px solid #f1f1f1;
+}
+
+nav .onglets a:hover{
+  border-bottom: 3px solid #f1f1f1;
+}
+
+.home{
+  padding-left: 10px;
+  width: 30px;
+}
+
+/* Section */
+
+section{
+  display: grid;
+  grid: repeat(2,150px) / auto-flow 200px;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+section div a {
+  text-decoration: none;
+}
+
+section p{
+  font-size: 20px;
+  margin-left: 30px;
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  border: 3px solid #f1f1f1;
+  padding-top: 30px;
+}
+
+section .hip-hop p,section .k-pop p,section .rap-fr p{
+  background: linear-gradient(120deg, rgba(254,172,94,1) 0%, rgba(199,121,208,1) 70%);
+  border-radius: 30px;
+}
+
+section .pop p,section .rock p,section .electro p {
+  background: linear-gradient(120deg, rgba(75,192,200,1) 0%, rgba(66,219,117,1) 70%);
+  border-radius: 30px;
+}
